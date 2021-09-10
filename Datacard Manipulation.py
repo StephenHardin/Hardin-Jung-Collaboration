@@ -42,3 +42,8 @@ for j in range(1,len(iteration_dict)+1):
         for row in line_list:
             output.write(str(" ".join(row))+'\n')
             
+    datacardfile=open("datacard_list.txt","w")
+    for line in range(1,len(iteration_dict)+1):
+        datacardfile.write('Datacard'+str(line))
+        datacardfile.write('\n')
+    datacardfile.close()
