@@ -9,6 +9,7 @@ for line in lines :
     sh_file = 'Ntuple_' + str(i) + '.sh'
     
     with open(sh_file, 'w') as cfg :
+        line = line.strip('\n')
         cfg.write("#!/bin/sh")
         cfg.write("\n")
         cfg.write("#SBATCH  -A cms-a")
@@ -26,5 +27,4 @@ for line in lines :
         cfg.write("eval `scramv1 runtime -sh`")
         cfg.write("\n")
         cfg.write("combine -M AsymptoticLimits "+str(line)+" --toys 10000")
-        #print("combine -M AsymptoticLimits "+str(line) + " --toys 10000")
         cfg.write("\n")
