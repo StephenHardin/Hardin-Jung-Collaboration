@@ -1,5 +1,5 @@
 i     = 0
-f     = open('datacard_list.py', 'r')
+f     = open('Datacard_list.txt', 'r')
 lines = f.readlines()
 
 
