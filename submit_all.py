@@ -1,3 +1,4 @@
+#!/bin/sh
 import subprocess
 
 jobs = len(open("Datacard_list.txt").readlines(  ))
