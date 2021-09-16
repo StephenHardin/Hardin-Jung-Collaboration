@@ -25,6 +25,6 @@ for line in lines :
         cfg.write("\n")
         cfg.write("eval `scramv1 runtime -sh`")
         cfg.write("\n")
-        cfg.write("combine -M AsymptoticLimits "+str(line) +".txt" --toys 10000")
+        cfg.write("combine -M AsymptoticLimits "+str(line) +".txt" +"--toys 10000")
         #print("combine -M AsymptoticLimits "+str(line) + " --toys 10000")
         cfg.write("\n")
