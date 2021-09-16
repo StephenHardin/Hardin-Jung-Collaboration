@@ -1,6 +1,6 @@
 import subprocess
 
-jobs = len(open("datacard_list.py").readlines(  ))
+jobs = len(open("Datacard_list.txt").readlines(  ))
 
 #range is number of datacards
 for count in range(jobs) :
