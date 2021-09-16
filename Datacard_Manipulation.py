@@ -44,7 +44,7 @@ for j in range(1,len(iteration_dict)+1):
             
     datacardfile=open("Datacard_list.txt","w")
     for line in range(1,len(iteration_dict)+1):
-        datacardfile.write('Datacard'+str(line))
+        datacardfile.write('Datacard'+str(line)+".txt")
         datacardfile.write('\n')
     datacardfile.close()
 
