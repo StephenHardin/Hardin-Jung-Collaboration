@@ -12,7 +12,7 @@ for line in lines :
         line = line.strip('\n')
         cfg.write("#!/bin/sh")
         cfg.write("\n")
-        cfg.write("#SBATCH  -A cms-a")
+        cfg.write("#SBATCH  -A cms")
         cfg.write("\n")
         cfg.write("#SBATCH --nodes=1")
         cfg.write("\n")
